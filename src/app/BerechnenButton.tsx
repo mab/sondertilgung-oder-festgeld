@@ -1,5 +1,6 @@
 "use client"
 import {useState} from "react";
+import Ergebnis from "@/app/Ergebnis";
 
 export default function BerechnenButton() {
     const [message, setMessage] = useState("");
@@ -12,10 +13,10 @@ export default function BerechnenButton() {
 
     return (
         <div>
-            <button className="btn btn-blue m-3 " onClick={handleClick}>
+            <button className="btn btn-blue m-3" onClick={handleClick}>
                 Berechnen
             </button>
-            {clicked && <h2>{message}</h2>}
+            {clicked && <Ergebnis message={message}/>}
         </div>
     )
 }

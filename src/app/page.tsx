@@ -71,11 +71,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="flex">
-                    <div className="w-1/2">
-                        <BerechnenButton />
-                    </div>
-                </div>
+                <BerechnenButton />
         </main>
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
             <a
